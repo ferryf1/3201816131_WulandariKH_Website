@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Hot News | Avenged Sevenfold</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+     color: #fff;
+     background: url('img/aaa.png');
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+}
+.navbar-brand{
+  padding-left: 90px;
+}
+.cover{
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+  background-color: black ;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+/* Create three equal columns that floats next to each other */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.navbar li {
+  float: left;
+  list-style: none;
+}
+.navbar li a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  font-weight: bold;
+}
+.navbar li a:hover {
+  background : #ffffff;
+  color: #000000;
+}
+
+.navbar a.active{
+  background : white; 
+  color: black;
+}
+
+.center ul {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width:  fit-content;
+  margin: auto;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+ /* set image*/
+.img {
+     width: 100%;
+     height: auto;
+     padding: 10px;
+}
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+
+
+<style>
+.lebarkolom {
+width:80%;    
+margin:0 auto; 
+border: 0px solid #000; /* border, opsional */
+}
+.baris {
+width: 100%;    /* harus 100% supaya penuh ke area table */
+}
+.kolom1 {
+width: 55%; 
+float: left;  /* Konten di letakkan di sebelah kiri*/
+}
+.kolom2 {
+width: 45%; 
+float: left;  /* kolom yang lebih duluan akan ditempatkan di kiri, begitu seterusnya */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* slider */
+.slider { 
+  border: 0px solid ; 
+  position: relative; 
+  overflow: hidden; 
+  background: #efefef;
+}
+ 
+.slider { 
+  margin:20px auto;
+  width: 768px;
+  height: 450px; 
+}
+ 
+.isi-slider img { 
+  width: 768px;
+  height: 450px; 
+  float: left;
+}
+ 
+.isi-slider { 
+  position: absolute; 
+  width:3900px;  
+ 
+  /*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+  animation-name:slider;
+  animation-duration:16s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count:infinite;
+
+  -webkit-animation-name:slider;
+  -webkit-animation-duration:16s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+
+  -moz-animation-name:slider;
+  -moz-animation-duration:16s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count:infinite;
+
+  -o-animation-name:slider;
+  -o-animation-duration:16s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count:infinite;
+}
+ 
+ 
+/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+.isi-slider:hover { 
+  -webkit-animation-play-state:paused; 
+  -moz-animation-play-state:paused; 
+  -o-animation-play-state:paused; 
+  animation-play-state:paused; }
+}
+ 
+.isi-slider img { 
+  float: right; 
+}
+ 
+.slider:after { 
+  font-size: 150px; 
+  position: absolute; 
+  z-index: 12; 
+  color: rgba(255,255,255, 0); 
+  left: 300px; top: 80px; 
+  -webkit-transition: 1s all ease-in-out; 
+  -moz-transition: 1s all ease-in-out; 
+  transition: 1s all ease-in-out; 
+}
+ 
+.slider:hover:after { 
+  color: rgba(255,255,255, 0.6);  
+}
+ 
+ 
+ 
+@-moz-keyframes slider {     
+  0% {
+    left: 0; opacity: 0; 
+  }     
+  2% {
+    opacity: 1; 
+  }     
+  20% {
+    left: 0; opacity: 1; 
+  }     
+  21% {
+    opacity: 0; 
+  }     
+  24% {
+    opacity: 0; 
+  }     
+  25% {
+    left: -768px; opacity: 1; 
+  }       
+  45% {
+    left: -768px; opacity: 1; 
+  }     
+  46% {
+    opacity: 0; 
+  }     
+  48% {
+    opacity: 0; 
+  }     
+  50% {
+    left: -1536px; opacity: 1; 
+  }     
+  70% {
+    left: -1536px; opacity: 1; 
+  }     
+  72% {
+    opacity: 0; 
+  }     
+  74% {
+    opacity: 0; 
+  }    
+  75% {
+    left: -2304px; opacity: 1; 
+  }     
+  95% {
+    left: -2304px; opacity: 1; 
+  }     
+  97% { 
+    left: -2304px; opacity: 0;
+  }     
+  100% {
+    left: 0; opacity: 0; 
+  }
+} 
+ 
+@-webkit-keyframes slider {     
+  0% {
+    left: 0; opacity: 0; 
+  }     
+  2% {
+    opacity: 1; 
+  }     
+  20% {
+    left: 0; opacity: 1; 
+  }     
+  21% {
+    opacity: 0; 
+  }     
+  24% {
+    opacity: 0; 
+  }     
+  25% {
+    left: -768px; opacity: 1; 
+  }       
+  45% {
+    left: -768px; opacity: 1; 
+  }     
+  46% {
+    opacity: 0; 
+  }     
+  48% {
+    opacity: 0; 
+  }     
+  50% {
+    left: -1536px; opacity: 1; 
+  }     
+  70% {
+    left: -1536px; opacity: 1; 
+  }     
+  72% {
+    opacity: 0; 
+  }     
+  74% {
+    opacity: 0; 
+  }    
+  75% {
+    left: -2304px; opacity: 1; 
+  }     
+  95% {
+    left: -2304px; opacity: 1; 
+  }     
+  97% { 
+    left: -2304px; opacity: 0;
+  }     
+  100% {
+    left: 0; opacity: 0; 
+  }
+} 
+ 
+ 
+@keyframes slider {     
+  0% {
+    left: 0; opacity: 0; 
+  }     
+  2% {
+    opacity: 1; 
+  }     
+  20% {
+    left: 0; opacity: 1; 
+  }     
+  21% {
+    opacity: 0; 
+  }     
+  24% {
+    opacity: 0; 
+  }     
+  25% {
+    left: -768px; opacity: 1; 
+  }     
+  45% {
+    left: -768px; opacity: 1; 
+  }     
+  46% {
+    opacity: 0; 
+  }     
+  48% {
+    opacity: 0; 
+  }     
+  50% {
+    left: -1536px; opacity: 1; 
+  }     
+  70% {
+    left: -1536px; opacity: 1; 
+  }     
+  72% {
+    opacity: 0; 
+  }     
+  74% {
+    opacity: 0; 
+  }    
+  75% {
+    left: -2304px; opacity: 1; 
+  }     
+  95% {
+    left: -2304px; opacity: 1; 
+  }     
+  97% { 
+    left: -2304px; opacity: 0; 
+  } 
+ 
+  100% {
+    left: 0; opacity: 0; 
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <img src="img\header-fix.jpg" alt="a7x-logo" height="280" width="580"> 
+  </div>
+
+<div class="navbar center">
+  <ul> 
+  <li><a href="index.html" >Home</a></li>
+  <li><a href="news.html"class="active">News</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="music-video.html" >Music & Video</a></li>
+  <li><a href="contact-us.html">Contact Us</a></li>
+  <li><a href="about-us.html">About Us</a></li>
+  <li><a href="tour-schedule.html">Tour Schedule</a></li>
+  <li><a href="fan-page.html">Fan Club</a></li>
+  </ul>
+ </div> 
+ <center>
+   <h1>HOT NEWS !!!</h1>
+  </center>
+  <div class= slider>
+    <div class=isi-slider>
+      <img src="img/gambar 1.jpg" alt="Avenged - sevenfold - Instagram - field">
+      <img src="img/gambar 2.jpg" alt="Avenged - sevenfold - Instagram - field">
+      <img src="img/gambar 3.jpg" alt="Avenged - sevenfold - Instagram - field">
+      <img src="img/gambar 4.jpg" alt="Avenged - sevenfold - Instagram - field">
+    </div>
+  </div>
+
+
+<div class="lebarkolom">
+   <div class="baris">
+      <div class="kolom1">
+<h4>Avenged Sevenfold Makes a Free Merch Prize Contest for Quarantine Enthusiasts</h4>
+<h5>Wulandari Kusuma Herdanu - Friday, March 20, 2020</h5>
+<p>Avenged Sevenfold fans will have good reason to stay home during this independent quarantine period for the next few days.Independent quarantine to prevent the corona virus pandemic, inspired A7X to create a contest on social media.
+For fans who do this challenge, will have the opportunity to get a number of free merchandise from Avenged Sevenfold.
+The band fronted by M. Shadows is working with streetwear designer Warren Lotas in conducting this contest.
+However, there are some special rules that fans must follow to get a free merch.
+As explained by Avenged Sevenfold on Instagram, they asked fans to stay at home for seven full days and undergo an independent quarantine.</p>
+
+      </div>
+<div class="baris">
+  <div class="kolom2">
+      <p>Starting tomorrow we will be joining our friends @WarrenLotas in incentivizing people to stay home for a full 7 days and self quarantine. We are developing a “Check-in” webpage where you will upload a selfie at home when prompted by us via our IG STORY at a random time.      
+      Whoever successfully uploads a selfie with the PHRASE OF THE DAY written on a piece of paper within 30 MINUTES of that post, 7 days in a row, will receive a free t-shirt, hoodie or accessory from @A7XWorld. We have a chance to “flatten the curve” and save countless lives.  We are all in this together.      
+      DON’T WORRY ABOUT BEING PERFECT: You can start your 7 days at any point so if you miss a check in just start again and you’ll be at 7 before you know it. In addition we will be CLOSING @A7XWorld for now. We encourage you to support your favorite independent artists, brands, and businesses during this time of uncertainty. #incentivizedquarantine</p>
+</div>
+  </div>
+   </div>
+    <div style="clear: both;" /> <!-- tag ini sebelum penutup div lebar kolom -->
+  </div>
+ </body>
+
+<div style="color : white; background-color: black; text-align: center;padding:10px;margin-top:7px;font-size:12px;">web design made by Wulandari Kusuma Herdanu</div>
+</html>

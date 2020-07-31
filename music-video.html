@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Official Music Video | Avenged Sevenfold</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: -webkit-linear-gradient(bottom, #333, white);
+  background-repeat: no-repeat;
+}
+
+/* Style the header */
+.header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+/* Create three equal columns that floats next to each other */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.navbar li {
+  float: left;
+  list-style: none;
+}
+.navbar li a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  font-weight: bold;
+}
+.navbar li a:hover {
+  background : #ffffff;
+  color: #000000;
+}
+.navbar a.active{
+  background : white; 
+  color: black;
+}
+.center ul {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width:  fit-content;
+  margin: auto;
+}
+
+/* peletakan */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  clear: both;
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="header">
+  <img src="img\header-fix.jpg" alt="a7x-logo" height="280" width="580"> 
+  </div>
+
+<div class="navbar center">
+  <ul> 
+  <li><a href="index.html" >Home</a></li>
+  <li><a href="news.html">News</a></li>
+  <li><a href="shop.html" >Shop</a></li>
+  <li><a href="music-video.html" class="active">Music & Video</a></li>
+  <li><a href="contact-us.html">Contact Us</a></li>
+  <li><a href="about-us.html">About Us</a></li>
+  <li><a href="tour-schedule.html">Tour Schedule</a></li>
+  <li><a href="fan-page.html">Fan Club</a></li>
+  </ul>
+</div>
+<center>
+<h1></h1>
+
+<video width="720" height="640" autoplay>
+  <source src="img\a7x.mp4" type="video/mp4">
+  <source src="img\a7x.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</center>
+<p><b>Note:</b> The autoplay attribute does not work on some mobile devices.</p>
+
+</body>
+</html>
